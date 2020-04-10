@@ -1,0 +1,90 @@
+{
+  "id": "77109ad9-f4f3-4bfb-96b5-ad9bfc8dbd96",
+  "version": "2.0",
+  "name": "wait",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "cdb85c5f-a426-4479-8ce8-5f622678e343",
+    "name": "you tube",
+    "commands": [{
+      "id": "76b2d0bb-869a-46b5-a13b-1bd8f56677d6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6ea1afa-fddb-42a1-ac7b-451e9873c016",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1121x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57b16fff-6ab9-4c55-b943-0eeb00fcccb1",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0bc1027-d260-421a-8851-bdd52cdc8973",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [],
+      "value": "ub40"
+    }, {
+      "id": "2adeefb5-a975-4b8a-b7b1-6861d4afe673",
+      "comment": "",
+      "command": "click",
+      "target": "css=#search-icon-legacy > .style-scope:nth-child(1)",
+      "targets": [
+        ["css=#search-icon-legacy > .style-scope:nth-child(1)", "css:finder"],
+        ["xpath=//button[@id='search-icon-legacy']/yt-icon", "xpath:idRelative"],
+        ["xpath=//form/button/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c956fe59-6cfc-40b8-91a6-1d4e4fd56cb0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.video-stream",
+      "targets": [
+        ["css=.video-stream", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div/video", "xpath:idRelative"],
+        ["xpath=//video", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "83402d77-7d66-4977-92d1-471041d6f18b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytd-radio-renderer > #video-title",
+      "targets": [
+        ["css=.ytd-radio-renderer > #video-title", "css:finder"],
+        ["xpath=//span[@id='video-title']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/a/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Mix: UB40')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f88c7df6-a821-40ce-ae62-1f7b964930ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cdb85c5f-a426-4479-8ce8-5f622678e343"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}
