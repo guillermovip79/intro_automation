@@ -1,0 +1,135 @@
+{
+  "id": "20321cfe-e5c7-40e4-ac97-616b61dd6987",
+  "version": "2.0",
+  "name": "tarea",
+  "url": "https://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "c9e1a51e-10eb-4c3f-92bc-5a6df9341860",
+    "name": "test 1",
+    "commands": [{
+      "id": "12a4adfe-6801-4769-82c2-68b006113ce3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f65d77e9-0966-4526-a51a-6dc55a9eea83",
+      "comment": "",
+      "command": "click",
+      "target": "css=footer font > font",
+      "targets": [
+        ["css=footer font > font", "css:finder"],
+        ["xpath=//footer/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e57fb9c-d776-411d-b5e3-b995358e0a10",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a250a0b-5599-4077-be94-9fac3c111e2c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63b5f28c-150d-4200-a8d4-5b78e703657e",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "656d2a59-ce45-4b4f-8647-44906c7daf59",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd3cf951-46b3-4cc2-8d54-bd429e95eeed",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0013ab6e-25bc-4182-be4a-310b67774284",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "66265f93-2631-4d92-9e9c-28617ebd1734",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Iniciar sesión']", "xpath:attributes"],
+        ["xpath=//font/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3862e28-6805-47d2-8636-79db47dc10a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=footer font > font",
+      "targets": [
+        ["css=footer font > font", "css:finder"],
+        ["xpath=//footer/a/font/font", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccd18de0-1283-42b6-b43b-a13291835bea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main",
+      "targets": [
+        ["css=.main", "css:finder"],
+        ["xpath=//section", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e059eae5-fcd5-475e-99bf-c6b5924e8bfa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9e1a51e-10eb-4c3f-92bc-5a6df9341860"]
+  }],
+  "urls": ["https://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
